@@ -1,0 +1,17 @@
+Console.WriteLine("hallo welt");
+
+string[] Studenten = {"Anna","Bert","Tom"};
+int[] Semester = {3,5,1};
+
+ITPlanung(Studenten,Semester,1);
+
+static void ITPlanung(string[] Namen, int[] Semester, int minSemester)
+{
+    for(int counter = 0; counter < Namen.Length; counter++)
+    {
+        if(Semester[counter] >= minSemester)
+        {
+            Console.WriteLine(Namen[counter]);
+        }
+    }
+}
